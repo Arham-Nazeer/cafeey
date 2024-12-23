@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFEEY.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+.navbar{
+    background-color:#0B0019 !important;
+    padding: 0;
+    z-index: 10;
+    position: fixed;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 900;
+}
+.navbar a{
+    color: #FFCC00 !important;
+}
+.navbar-toggler{
+    color: white !important;
+    background-color: #FFCC00 !important;
+}
+.navbar-toggler-icon{
+    background-color: #FFCC00 !important;
+    transition: 1s;
+}
+.nav-item{
+    text-align: center !important;  
+}
+.video{
+  /* position: absolute; */
+  top: 10px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: auto;
+    width: 100%;
+}
+.menu{
+  color: #FFCC00;
+  background-color: #0B0019;
+  text-align: center;
+}
+body{
+  background-color: #FFCC00 !important;
+  color: #0B0019 !important;
+}
+.card{
+  padding: 10px;
+  background-color: #FFCC00;
+  border: 5px solid #0B0019;
+  border-radius: 15px;
+  transition: 0.25s;
+}
+.card:hover{
+  filter: drop-shadow(1px 1px 20px #0B0019);
+  scale: 1.05;
+}
+.deals{
+  color: #FFCC00;
+  background-color: #0B0019;
+  text-align: center;
+}
+#ratings{
+  color: #FFCC00;
+  background-color: #0B0019;
+  text-align: center;
+}
+#about{
+  color: #FFCC00;
+  background-color: #0B0019;
+  text-align: center;
+}
+footer{
+  color: #FFCC00;
+  background-color: #0B0019;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 9px;
+}
+.container{
+  border: 5px solid #0B0019;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 5px;
+}
+.rat{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#preloader{
+  height: 100vh;
+  width: 100%;
+  background: #FFCC00 url(/loader.gif) no-repeat center center;
+  position: fixed;
+  z-index: 100;
+}
+.qwe{
+  display: none;
+}
+    </style>
+</head>
+<body>
+  <div id="preloader">
+
+  </div>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="CAFEEY LOGO.png" style="height: 75px; width: 100px; padding-top: 0; padding-bottom: 0;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#menu">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#deals">DEALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ratings">RATINGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT-US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html" target="_blank">CONTACT-US</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <!-- home page -->
+   <div>
+  <div class="contain">
+    
+    <video autoplay loop muted plays-inline src="bgv2123.mp4" class="video"></video>
+  </div></div>
+
+   <br>
+   <div class="container">
+   <div class="menu" id="menu">
+   <h1>OUR MENU</h1>
+   </div><br>
+   <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/bcb2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bacon Cheeseburger</h5>
+          <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, incidunt.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/o2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chunky Onion rings</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, rem?</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/bb.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Broccoli Cheddar Soup</h5>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dolor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/m.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mushroom Swiss</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, distinctio!.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/s.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Stroganoff
+          </h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatibus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/cw.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Wings</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, numquam!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/c3.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Choco Peanut Butter Milkshake</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, dolorem!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/ms.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mozzarella Sticks</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/hfs.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hot Fudge Sundae</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/curry.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Curry <span class="badge bg-secondary">Our-Special</span></h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/acb.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Anda Chicken Biryani <span class="badge bg-secondary">Our-Special</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/sp.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Special Pulao  <span class="badge bg-secondary">Our-Special</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <!-- deals -->
+   <div class="container">
+    <div class="deals" id="deals">
+      <h1>Our-Deals</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/d1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DEAL-1</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse voluptatem laborum quae quo possimus expedita.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/d4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DEAL-2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus quaerat, minima nulla nemo neque!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/d3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DEAL-3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis earum culpa natus consequatur accusantium cum!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/d2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DEAL-4</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit, necessitatibus aliquid quis dolorem vero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+ <!-- ratings -->
+  <div class="container">
+    <div id="ratings">
+      <h1>OUR-RATINGS</h1>
+    </div>
+    <div class="rat">
+    <div class="col-lg-4">
+      <img src="CAFEEY LOGO.png" style="height: 55px; width: auto;border-radius: 50%;">
+      <h2>userabc-12</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-secondary" href="#">⭐⭐⭐⭐⭐</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img src="CAFEEY LOGO.png" style="height: 55px; width: auto;border-radius: 50%;">
+      <h2>userabc-12</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-secondary" href="#">⭐⭐⭐⭐⭐</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img src="CAFEEY LOGO.png" style="height: 55px; width: auto;border-radius: 50%;">
+      <h2>userabc-12</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-secondary" href="#">⭐⭐⭐⭐</a></p>
+    </div>
+    <div class="col-lg-4">
+      <img src="CAFEEY LOGO.png" style="height: 55px; width: auto;border-radius: 50%;">
+      <h2>userabc-12</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-secondary" href="#">⭐⭐⭐⭐⭐</a></p>
+    </div>
+    <div class="col-lg-4">
+<img src="CAFEEY LOGO.png" style="height: 55px; width: auto;border-radius: 50%;">
+      <h2>userabc-12</h2>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      <p><a class="btn btn-secondary" href="#">⭐⭐⭐</a></p>
+    </div>
+  </div>
+  </div>
+  <!-- about -->
+  <div class="container">
+    <div id="about">
+      <h1>MEET OUR TEAM!</h1>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="/p1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">OUR-LEADER</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, libero.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="/p2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MAIN-COOK</h5>
+          <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, beatae.</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <img src="/p3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SPECIALIST</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aperiam?</p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="qwe">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/a7P0UO8TANk?si=2VEIW2MlclSW2g4a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </div>
+  <footer>
+    All rights reserved @CAFEEY 2023-25
+  </footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script>
+    let loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      loader.style.display = "none";
+    })
+    </script>
+</body>
+</html>

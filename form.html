@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    body{
+        background-color: #FFCC00;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 7px solid #0B0019;
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+    }
+</style>
+<body>
+    <h1 style=" color: #FFCC00;
+    background-color: #0B0019;
+    text-align: center;">TO CONNECT WITH US FILL OUT THE FOLLOWING:</h1>
+    <div class="form">
+    Name: <input type="text" name="username" id="" pattern="[A-Za-z]+"><br><br>
+    Phone number: <select id="ccode" name="ccode">
+        <option value="+92">+92 (Pakistan)</option>
+        <option value="+91">+91 (India)</option>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+    </select> <input type="text" name="phone" id="" pattern="^\d{4}-\d{7}$"><br><br>
+    Password: <input type="password" id="pass1" name="pass" pattern="'\w{8,12}">
+    <button type="button" id="sh" onclick="show()">SHOW</button><br><br>
+    Confirm: <input type="password" id="pass2" name="pass2" pattern="\w{8,12}">
+    <input type="submit" name="" id="" onclick="check()">
+</div>
+
+ <script>
+    function check(){
+        let first = document.getElementById("pass1").value;
+        let second= document.getElementById("pass2").value;
+        if(first !== second){
+            alert("PASSWORD NOT MATCHED!");
+        }else{
+            alert("PASSWORD MATCHED!")
+        }
+    }
+
+    function show(){
+        let x = document.getElementById("pass1").type;
+        if(x=="password"){
+            document.getElementById("pass1").type="text";
+            document.getElementById("sh").innerHTML="HIDE";
+        }else{
+            document.getElementById("pass1").type="password";
+            document.getElementById("sh").innerHTML="SHOW";
+        }
+    }
+ </script>   
+</body>
+</html>
